@@ -123,6 +123,18 @@ footer a{color:#E8B9B3}
 .results .proofs{margin-top:0;grid-template-columns:minmax(0,1fr)}
 .results .proof{min-height:0}
 @media(max-width:760px){.pain,.pillars,.results{grid-template-columns:minmax(0,1fr)}}
+.ba{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:28px}
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;border-radius:22px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+.pair figure{margin:0;position:relative}
+.pair img{width:100%;aspect-ratio:1;object-fit:cover}
+.pair figcaption{position:absolute;left:10px;top:10px;background:rgba(27,34,24,.85);color:#fff;font-size:13px;font-weight:700;padding:4px 12px;border-radius:999px}
+.pair figure:last-child figcaption{background:var(--gold);color:#1F2619}
+.quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}
+.quote{margin:0;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px 24px 20px}
+.quote p{font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1.25;font-weight:600}
+.quote cite{display:block;margin-top:12px;font-size:14px;font-style:normal;color:var(--soft)}
+.founder{display:inline-block;background:#2F3A2B;color:#C9A66B;font-weight:700;font-size:14px;padding:6px 14px;border-radius:999px;margin-bottom:14px}
+@media(max-width:760px){.ba,.quotes{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:760px){
  .hero .wrap,.about .wrap{grid-template-columns:minmax(0,1fr)}
  .photo{order:-1;max-width:300px}
@@ -207,13 +219,30 @@ footer a{color:#E8B9B3}
 
 <section class="band" style="padding-top:0">
   <div class="wrap">
-    <h2>O resultado que você vai aprender a entregar</h2>
-    <div class="results">
-      <figure><img src="/lash-lifting-shine/img/cilios-lash-lifting.jpg" alt="Resultado de lash lifting feito pela Rejane Real"><figcaption>Resultado feito pela Rejane no studio</figcaption></figure>
-      <div class="proofs">
-        <div class="proof">Depoimento real de aluna</div>
-        <div class="proof">Antes e depois de aluna</div>
+    <h2>Antes e depois, feitos pela Rejane</h2>
+    <p style="margin-top:12px;color:var(--soft)">Cílios naturais das clientes do Studio Rejane Real, sem extensão e sem máscara. É esse resultado que você aprende a entregar.</p>
+    <div class="ba">
+      <div class="pair">
+        <figure><img src="/lash-lifting-shine/img/antes-1.jpg" alt="Cílios retos antes do lash lifting" loading="lazy"><figcaption>Antes</figcaption></figure>
+        <figure><img src="/lash-lifting-shine/img/depois-1.jpg" alt="Cílios curvados depois do lash lifting" loading="lazy"><figcaption>Depois</figcaption></figure>
       </div>
+      <div class="pair">
+        <figure><img src="/lash-lifting-shine/img/antes-2.jpg" alt="Cílios caídos antes do lash lifting" loading="lazy"><figcaption>Antes</figcaption></figure>
+        <figure><img src="/lash-lifting-shine/img/depois-2.jpg" alt="Cílios alinhados e curvados depois do lash lifting" loading="lazy"><figcaption>Depois</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="background:var(--card)">
+  <div class="wrap">
+    <h2>O que as clientes do studio dizem</h2>
+    <p style="margin-top:12px;color:var(--soft)">Mensagens reais que a Rejane recebeu das clientes. O curso é novo, e os depoimentos das primeiras alunas entram aqui em breve.</p>
+    <div class="quotes">
+      <blockquote class="quote"><p>“Eu sou tão grata pela segurança que me passou pra fazer minha sobrancelha e meus cílios.”</p><cite>Joyce B., cliente do studio</cite></blockquote>
+      <blockquote class="quote"><p>“Já estou me sentindo outra com esse novo olhar.”</p><cite>Cliente do studio</cite></blockquote>
+      <blockquote class="quote"><p>“Perfeita demais, Re!!! Como eu imaginei. Muito, muito, muito obrigada!”</p><cite>Maria F., cliente do studio</cite></blockquote>
+      <blockquote class="quote"><p>“Top mesmo, sensacional, amei! Obrigada por me deixar linda.”</p><cite>Cliente do studio</cite></blockquote>
     </div>
   </div>
 </section>
@@ -255,6 +284,7 @@ footer a{color:#E8B9B3}
           <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4E5E45" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="fill">Tempo de acesso às aulas</span></li>
           <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4E5E45" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>7 dias de garantia</li>
         </ul>
+    <span class="founder">Primeira turma do Lash Lifting Shine</span>
     <p class="from">de <s>R$ 197</s> por apenas</p>
     <p class="now"><small>R$</small>97</p>
     <p class="pay">à vista no Pix ou parcelado no cartão</p>
